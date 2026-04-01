@@ -79,6 +79,9 @@
 -- flight_id, airline, price, destination, status
 
 -- Q1: Employees filter
+-- Logic:
+-- IT employees with salary > 70000 OR HR employees who are Active
+
 SELECT *
 FROM Employees
 WHERE 
@@ -86,6 +89,9 @@ WHERE
 OR (department = 'HR' AND status = 'Active');
 
 -- Q2: Orders filter
+-- Logic:
+-- Orders from USA with amount > 10000 OR Pending orders from India
+
 SELECT *
 FROM Orders
 WHERE 
@@ -93,6 +99,9 @@ WHERE
 OR (payment_status = 'Pending' AND country = 'India');
 
 -- Q3: Students filter
+-- Logic:
+-- Science students with marks > 50 OR Commerce students who passed
+
 SELECT *
 FROM Students 
 WHERE 
@@ -100,6 +109,9 @@ WHERE
 OR (stream = 'Commerce' AND result = 'Pass');
 
 -- Q4: Flights filter
+-- Logic:
+-- Flights to Delhi with price > 7000 OR Indigo flights that are Cancelled
+
 SELECT *
 FROM Flights
 WHERE 
